@@ -3,9 +3,58 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8262A091-F1F5-4CC1-B0FA-791706AE1A66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JointCarPlaylists.Domain", "Core\JointCarPlaylists.Domain\JointCarPlaylists.Domain.csproj", "{3C43C3F7-8783-472E-8BFC-641CDAB9CCF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JointCarPlaylists.Application", "Core\JointCarPlaylists.Application\JointCarPlaylists.Application.csproj", "{C0B31DB6-0A42-427B-9134-E16200CDCA67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3B1B3354-1334-4E2A-A878-30D3E2D2BF2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JointCarPlaylists.Infrastructure", "Infrastructure\JointCarPlaylists.Infrastructure\JointCarPlaylists.Infrastructure.csproj", "{598E40F7-E1DE-4F84-9E49-824385D66992}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JointCarPlaylists.Persistence", "Infrastructure\JointCarPlaylists.Persistence\JointCarPlaylists.Persistence.csproj", "{CA31B6B5-1FD9-46F9-BC3D-8C390F461A19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{50D09CF1-7BB0-47C2-AA8C-B8266769D529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JointCarPlaylists.API", "Presentation\JointCarPlaylists.API\JointCarPlaylists.API.csproj", "{8B895739-38D9-441C-8CE9-ECA3DB5E0196}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C43C3F7-8783-472E-8BFC-641CDAB9CCF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C43C3F7-8783-472E-8BFC-641CDAB9CCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C43C3F7-8783-472E-8BFC-641CDAB9CCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C43C3F7-8783-472E-8BFC-641CDAB9CCF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0B31DB6-0A42-427B-9134-E16200CDCA67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0B31DB6-0A42-427B-9134-E16200CDCA67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0B31DB6-0A42-427B-9134-E16200CDCA67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0B31DB6-0A42-427B-9134-E16200CDCA67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{598E40F7-E1DE-4F84-9E49-824385D66992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598E40F7-E1DE-4F84-9E49-824385D66992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598E40F7-E1DE-4F84-9E49-824385D66992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598E40F7-E1DE-4F84-9E49-824385D66992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA31B6B5-1FD9-46F9-BC3D-8C390F461A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA31B6B5-1FD9-46F9-BC3D-8C390F461A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA31B6B5-1FD9-46F9-BC3D-8C390F461A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA31B6B5-1FD9-46F9-BC3D-8C390F461A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B895739-38D9-441C-8CE9-ECA3DB5E0196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B895739-38D9-441C-8CE9-ECA3DB5E0196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B895739-38D9-441C-8CE9-ECA3DB5E0196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B895739-38D9-441C-8CE9-ECA3DB5E0196}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C43C3F7-8783-472E-8BFC-641CDAB9CCF3} = {8262A091-F1F5-4CC1-B0FA-791706AE1A66}
+		{C0B31DB6-0A42-427B-9134-E16200CDCA67} = {8262A091-F1F5-4CC1-B0FA-791706AE1A66}
+		{598E40F7-E1DE-4F84-9E49-824385D66992} = {3B1B3354-1334-4E2A-A878-30D3E2D2BF2A}
+		{CA31B6B5-1FD9-46F9-BC3D-8C390F461A19} = {3B1B3354-1334-4E2A-A878-30D3E2D2BF2A}
+		{8B895739-38D9-441C-8CE9-ECA3DB5E0196} = {50D09CF1-7BB0-47C2-AA8C-B8266769D529}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1575E4C5-67B4-4009-9D05-3C21EF3D0692}

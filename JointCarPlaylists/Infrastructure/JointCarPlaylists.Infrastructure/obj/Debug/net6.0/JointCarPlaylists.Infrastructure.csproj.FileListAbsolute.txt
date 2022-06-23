@@ -1,0 +1,15 @@
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\bin\Debug\net6.0\JointCarPlaylists.Infrastructure.deps.json
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\bin\Debug\net6.0\JointCarPlaylists.Infrastructure.dll
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\bin\Debug\net6.0\JointCarPlaylists.Infrastructure.pdb
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\bin\Debug\net6.0\JointCarPlaylists.Application.dll
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\bin\Debug\net6.0\JointCarPlaylists.Application.pdb
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\JointCarPlaylists.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\JointCarPlaylists.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\JointCarPlaylists.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\JointCarPlaylists.Infrastructure.AssemblyInfo.cs
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\JointCarPlaylists.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\JointCarPlaylists.Infrastructure.csproj.CopyComplete
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\JointCarPlaylists.Infrastructure.dll
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\refint\JointCarPlaylists.Infrastructure.dll
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\JointCarPlaylists.Infrastructure.pdb
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\ref\JointCarPlaylists.Infrastructure.dll

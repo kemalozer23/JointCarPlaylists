@@ -1,0 +1,424 @@
+2022-06-23 17:49:09.2780 Info Message Template Auto Format enabled
+2022-06-23 17:49:09.2780 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-23 17:49:09.2780 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-06-23 17:49:09.2780 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:49:09.2780 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-23 17:49:09.2780 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-23 17:49:09.2780 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:49:09.2780 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-23 17:49:09.2780 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:49:09.2780 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-23 17:49:09.2780 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:49:09.2780 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-23 17:49:09.2780 Info Adding target FileTarget(Name=logfile)
+2022-06-23 17:49:09.2780 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-23 17:49:09.2780 Trace ParseRulesElement
+2022-06-23 17:49:09.2780 Debug Stopping file watching for path 'C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API' filter 'nlog.config'
+2022-06-23 17:49:09.2780 Info Closing old configuration.
+2022-06-23 17:49:09.2780 Debug LogFactory Flush with timeout=15 secs
+2022-06-23 17:49:09.2780 Trace Flushing all 1 targets...
+2022-06-23 17:49:09.2780 Trace ForEachItemInParallel() 1 items
+2022-06-23 17:49:09.2780 Trace FileTarget(Name=logfile): FlushAsync
+2022-06-23 17:49:09.2780 Trace Continuation invoked: 
+2022-06-23 17:49:09.2780 Trace Parallel task completed. 0 items remaining
+2022-06-23 17:49:09.2937 Debug Flush completed
+2022-06-23 17:49:09.2937 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-06-23 17:49:09.2937 Debug Closing logging configuration...
+2022-06-23 17:49:09.2937 Trace Closing FileTarget(Name=logfile)
+2022-06-23 17:49:09.2937 Debug FileTarget(Name=logfile): Closing...
+2022-06-23 17:49:09.2937 Debug FileTarget(Name=logfile): Closed.
+2022-06-23 17:49:09.2937 Trace Closing .\logs\${shortdate}_logfile.txt
+2022-06-23 17:49:09.2937 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:49:09.2937 Trace Closing Layout Renderer: ${shortdate}
+2022-06-23 17:49:09.2937 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:49:09.2937 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-06-23 17:49:09.2937 Trace Closing Layout Renderer: ${longdate}
+2022-06-23 17:49:09.2937 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:49:09.2937 Trace Closing Layout Renderer: ${level}
+2022-06-23 17:49:09.2937 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:49:09.2937 Trace Closing Layout Renderer: ${message}
+2022-06-23 17:49:09.2937 Debug Finished closing logging configuration.
+2022-06-23 17:49:09.2937 Debug Watching file-filter 'nlog.config' in directory: C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API
+2022-06-23 17:49:09.2937 Debug --- NLog configuration dump ---
+2022-06-23 17:49:09.2937 Debug Targets:
+2022-06-23 17:49:09.2937 Debug FileTarget(Name=logfile)
+2022-06-23 17:49:09.2937 Debug Rules:
+2022-06-23 17:49:09.2937 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-23 17:49:09.2937 Debug --- End of NLog configuration dump ---
+2022-06-23 17:49:09.2937 Trace FindReachableObject<System.Object>:
+2022-06-23 17:49:09.2937 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-23 17:49:09.2937 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-23 17:49:09.2937 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-23 17:49:09.2937 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-23 17:49:09.2937 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-06-23 17:49:09.2937 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:49:09.2937 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:49:09.2937 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-23 17:49:09.2937 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:49:09.2937 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-23 17:49:09.2937 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-23 17:49:09.2937 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:49:09.2937 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-23 17:49:09.2937 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:49:09.2937 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-23 17:49:09.2937 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:49:09.2937 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-23 17:49:09.2937 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-23 17:49:09.2937 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-23 17:49:09.2937 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-23 17:49:09.2937 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API\nlog.config
+2022-06-23 17:49:09.2937 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-23 17:49:09.2937 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-23 17:49:09.3093 Trace Initializing Layout Renderer: ${message}
+2022-06-23 17:49:09.3093 Trace Initializing Layout Renderer: ${literal}
+2022-06-23 17:49:09.3093 Trace Initializing Layout Renderer: ${level}
+2022-06-23 17:49:09.3093 Trace Initializing Layout Renderer: ${literal}
+2022-06-23 17:49:09.3093 Trace Initializing Layout Renderer: ${longdate}
+2022-06-23 17:49:09.3093 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-23 17:49:09.3093 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:49:09.3093 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-23 17:49:09.3093 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:49:09.3093 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-23 17:49:09.3093 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:49:09.3093 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-23 17:49:09.3093 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:49:09.3093 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-23 17:49:09.3093 Trace Initializing Layout Renderer: ${literal}
+2022-06-23 17:49:09.3093 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-23 17:49:09.3093 Trace Initializing Layout Renderer: ${literal}
+2022-06-23 17:49:09.3093 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-06-23 17:49:09.3093 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:49:09.3093 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-06-23 17:49:09.3093 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:49:09.3093 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:49:09.3093 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-23 17:49:09.3093 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:49:09.3093 Trace Initializing FileTarget(Name=logfile)
+2022-06-23 17:49:09.3093 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-23 17:49:09.3093 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-23 17:49:09.3093 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-23 17:49:09.3093 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-06-23 17:49:09.3093 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-23 17:49:09.3093 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-23 17:49:09.3093 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-23 17:49:09.3093 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-23 17:49:09.3093 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-23 17:49:09.3093 Debug Targets configured when LogLevel >= Debug for Logger: JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager
+2022-06-23 17:49:09.3093 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Debug] => logfile
+2022-06-23 17:49:09.3093 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Info] => logfile
+2022-06-23 17:49:09.3093 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Warn] => logfile
+2022-06-23 17:49:09.3093 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Error] => logfile
+2022-06-23 17:49:09.3093 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Fatal] => logfile
+2022-06-23 17:50:09.0252 Info Configuration file change detected! Reloading in 1000ms...
+2022-06-23 17:50:10.0347 Info Reloading configuration...
+2022-06-23 17:50:10.0504 Info Loading NLog config from XML file: C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API\nlog.config
+2022-06-23 17:50:10.0504 Trace ParseNLogElement
+2022-06-23 17:50:10.0504 Trace ParseNLogConfig
+2022-06-23 17:50:10.0504 Info Message Template Auto Format enabled
+2022-06-23 17:50:10.0504 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-23 17:50:10.0504 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\{shortdate}_logfile.txt'
+2022-06-23 17:50:10.0504 Debug Setting 'NLog.Targets.FileTarget.layout' to '{longdate} {level:uppercase=true} {message}'
+2022-06-23 17:50:10.0504 Info Adding target FileTarget(Name=logfile)
+2022-06-23 17:50:10.0504 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-23 17:50:10.0504 Trace ParseRulesElement
+2022-06-23 17:50:10.0504 Debug Stopping file watching for path 'C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API' filter 'nlog.config'
+2022-06-23 17:50:10.0504 Info Closing old configuration.
+2022-06-23 17:50:10.0504 Debug LogFactory Flush with timeout=15 secs
+2022-06-23 17:50:10.0504 Trace Flushing all 1 targets...
+2022-06-23 17:50:10.0504 Trace ForEachItemInParallel() 1 items
+2022-06-23 17:50:10.0504 Trace FileTarget(Name=logfile): FlushAsync
+2022-06-23 17:50:10.0504 Trace Continuation invoked: 
+2022-06-23 17:50:10.0504 Trace Parallel task completed. 0 items remaining
+2022-06-23 17:50:10.0504 Debug Flush completed
+2022-06-23 17:50:10.0504 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-06-23 17:50:10.0504 Debug Closing logging configuration...
+2022-06-23 17:50:10.0504 Trace Closing FileTarget(Name=logfile)
+2022-06-23 17:50:10.0504 Debug FileTarget(Name=logfile): Closing...
+2022-06-23 17:50:10.0504 Debug FileTarget(Name=logfile): Closed.
+2022-06-23 17:50:10.0594 Trace Closing .\logs\${shortdate}_logfile.txt
+2022-06-23 17:50:10.0594 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:50:10.0594 Trace Closing Layout Renderer: ${shortdate}
+2022-06-23 17:50:10.0594 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:50:10.0594 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-06-23 17:50:10.0594 Trace Closing Layout Renderer: ${longdate}
+2022-06-23 17:50:10.0594 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:50:10.0594 Trace Closing Layout Renderer: ${level}
+2022-06-23 17:50:10.0594 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:50:10.0594 Trace Closing Layout Renderer: ${message}
+2022-06-23 17:50:10.0594 Debug Finished closing logging configuration.
+2022-06-23 17:50:10.0594 Debug Watching file-filter 'nlog.config' in directory: C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API
+2022-06-23 17:50:10.0594 Debug --- NLog configuration dump ---
+2022-06-23 17:50:10.0594 Debug Targets:
+2022-06-23 17:50:10.0594 Debug FileTarget(Name=logfile)
+2022-06-23 17:50:10.0594 Debug Rules:
+2022-06-23 17:50:10.0594 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-23 17:50:10.0594 Debug --- End of NLog configuration dump ---
+2022-06-23 17:50:10.0594 Trace FindReachableObject<System.Object>:
+2022-06-23 17:50:10.0594 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-23 17:50:10.0594 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-23 17:50:10.0594 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-23 17:50:10.0594 Trace   Scanning Property FileName '.\logs\{shortdate}_logfile.txt' NLog.Layouts
+2022-06-23 17:50:10.0594 Trace   Scanning SimpleLayout '.\logs\{shortdate}_logfile.txt'
+2022-06-23 17:50:10.0594 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:50:10.0594 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:50:10.0594 Trace   Scanning Property Layout '{longdate} {level:uppercase=true} {message}' NLog.Layouts
+2022-06-23 17:50:10.0594 Trace   Scanning SimpleLayout '{longdate} {level:uppercase=true} {message}'
+2022-06-23 17:50:10.0594 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:50:10.0594 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:50:10.0594 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-23 17:50:10.0594 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-23 17:50:10.0594 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-23 17:50:10.0594 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API\nlog.config
+2022-06-23 17:50:10.0594 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-23 17:50:10.0594 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-23 17:50:10.0594 Trace Initializing Layout Renderer: ${literal}
+2022-06-23 17:50:10.0594 Trace Initializing {longdate} {level:uppercase=true} {message}
+2022-06-23 17:50:10.0594 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:50:10.0594 Trace Scanning SimpleLayout '{longdate} {level:uppercase=true} {message}'
+2022-06-23 17:50:10.0594 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:50:10.0594 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:50:10.0594 Trace Initializing Layout Renderer: ${literal}
+2022-06-23 17:50:10.0594 Trace Initializing .\logs\{shortdate}_logfile.txt
+2022-06-23 17:50:10.0594 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:50:10.0748 Trace Scanning SimpleLayout '.\logs\{shortdate}_logfile.txt'
+2022-06-23 17:50:10.0748 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:50:10.0748 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:50:10.0748 Trace Initializing FileTarget(Name=logfile)
+2022-06-23 17:50:10.0748 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-23 17:50:10.0748 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-23 17:50:10.0748 Trace  Scanning Property FileName '.\logs\{shortdate}_logfile.txt' NLog.Layouts
+2022-06-23 17:50:10.0748 Trace  Scanning SimpleLayout '.\logs\{shortdate}_logfile.txt'
+2022-06-23 17:50:10.0748 Trace  Scanning Property Layout '{longdate} {level:uppercase=true} {message}' NLog.Layouts
+2022-06-23 17:50:10.0748 Trace  Scanning SimpleLayout '{longdate} {level:uppercase=true} {message}'
+2022-06-23 17:50:10.0748 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-23 17:50:10.0748 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-23 17:50:10.0748 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-23 17:50:10.0748 Debug Targets configured when LogLevel >= Debug for Logger: JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager
+2022-06-23 17:50:10.0748 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Debug] => logfile
+2022-06-23 17:50:10.0748 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Info] => logfile
+2022-06-23 17:50:10.0748 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Warn] => logfile
+2022-06-23 17:50:10.0748 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Error] => logfile
+2022-06-23 17:50:10.0748 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Fatal] => logfile
+2022-06-23 17:50:13.1334 Info AppDomain Shutting down. LogFactory closing...
+2022-06-23 17:50:13.1334 Debug Stopping file watching for path 'C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API' filter 'nlog.config'
+2022-06-23 17:50:13.1334 Trace Flushing all 1 targets...
+2022-06-23 17:50:13.1334 Trace ForEachItemInParallel() 1 items
+2022-06-23 17:50:13.1334 Trace FileTarget(Name=logfile): FlushAsync
+2022-06-23 17:50:13.1334 Trace Continuation invoked: 
+2022-06-23 17:50:13.1334 Trace Parallel task completed. 0 items remaining
+2022-06-23 17:50:13.1334 Debug Flush completed
+2022-06-23 17:50:13.1334 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-06-23 17:50:13.1334 Debug Targets not configured for Logger: JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager
+2022-06-23 17:50:13.1378 Debug Closing logging configuration...
+2022-06-23 17:50:13.1378 Trace Closing FileTarget(Name=logfile)
+2022-06-23 17:50:13.1378 Debug FileTarget(Name=logfile): Closing...
+2022-06-23 17:50:13.1378 Debug FileTarget(Name=logfile): Closed.
+2022-06-23 17:50:13.1378 Trace Closing .\logs\{shortdate}_logfile.txt
+2022-06-23 17:50:13.1378 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:50:13.1378 Trace Closing {longdate} {level:uppercase=true} {message}
+2022-06-23 17:50:13.1378 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:50:13.1378 Debug Finished closing logging configuration.
+2022-06-23 17:50:13.1378 Info LogFactory has been closed.
+2022-06-23 17:50:16.6427 Info Message Template Auto Format enabled
+2022-06-23 17:50:16.6587 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-23 17:50:16.6893 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-23 17:50:16.6893 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\{shortdate}_logfile.txt'
+2022-06-23 17:50:16.6893 Debug Setting 'NLog.Targets.FileTarget.layout' to '{longdate} {level:uppercase=true} {message}'
+2022-06-23 17:50:16.6893 Info Adding target FileTarget(Name=logfile)
+2022-06-23 17:50:16.6893 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-23 17:50:16.7009 Trace ParseRulesElement
+2022-06-23 17:50:16.7163 Debug Watching file-filter 'nlog.config' in directory: C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API
+2022-06-23 17:50:16.7163 Debug --- NLog configuration dump ---
+2022-06-23 17:50:16.7163 Debug Targets:
+2022-06-23 17:50:16.7163 Debug FileTarget(Name=logfile)
+2022-06-23 17:50:16.7163 Debug Rules:
+2022-06-23 17:50:16.7163 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-23 17:50:16.7163 Debug --- End of NLog configuration dump ---
+2022-06-23 17:50:16.7163 Trace FindReachableObject<System.Object>:
+2022-06-23 17:50:16.7163 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-23 17:50:16.7163 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-23 17:50:16.7324 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-23 17:50:16.7324 Trace   Scanning Property FileName '.\logs\{shortdate}_logfile.txt' NLog.Layouts
+2022-06-23 17:50:16.7324 Trace   Scanning SimpleLayout '.\logs\{shortdate}_logfile.txt'
+2022-06-23 17:50:16.7324 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:50:16.7324 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:50:16.7324 Trace   Scanning Property Layout '{longdate} {level:uppercase=true} {message}' NLog.Layouts
+2022-06-23 17:50:16.7324 Trace   Scanning SimpleLayout '{longdate} {level:uppercase=true} {message}'
+2022-06-23 17:50:16.7324 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:50:16.7324 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:50:16.7324 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-23 17:50:16.7324 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-23 17:50:16.7324 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-23 17:50:16.7324 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API\nlog.config
+2022-06-23 17:50:16.7324 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-23 17:50:16.7324 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-23 17:50:16.7324 Trace Initializing Layout Renderer: ${literal}
+2022-06-23 17:50:16.7324 Trace Initializing {longdate} {level:uppercase=true} {message}
+2022-06-23 17:50:16.7477 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:50:16.7477 Trace Scanning SimpleLayout '{longdate} {level:uppercase=true} {message}'
+2022-06-23 17:50:16.7477 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:50:16.7477 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:50:16.7477 Trace Initializing Layout Renderer: ${literal}
+2022-06-23 17:50:16.7477 Trace Initializing .\logs\{shortdate}_logfile.txt
+2022-06-23 17:50:16.7477 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:50:16.7477 Trace Scanning SimpleLayout '.\logs\{shortdate}_logfile.txt'
+2022-06-23 17:50:16.7477 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:50:16.7477 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:50:16.7477 Trace Initializing FileTarget(Name=logfile)
+2022-06-23 17:50:16.7477 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-23 17:50:16.7477 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-23 17:50:16.7477 Trace  Scanning Property FileName '.\logs\{shortdate}_logfile.txt' NLog.Layouts
+2022-06-23 17:50:16.7477 Trace  Scanning SimpleLayout '.\logs\{shortdate}_logfile.txt'
+2022-06-23 17:50:16.7477 Trace  Scanning Property Layout '{longdate} {level:uppercase=true} {message}' NLog.Layouts
+2022-06-23 17:50:16.7477 Trace  Scanning SimpleLayout '{longdate} {level:uppercase=true} {message}'
+2022-06-23 17:50:16.7477 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-23 17:50:16.7477 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-23 17:50:16.7477 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-23 17:50:17.4416 Debug Targets configured when LogLevel >= Debug for Logger: JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager
+2022-06-23 17:50:17.4416 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Debug] => logfile
+2022-06-23 17:50:17.4416 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Info] => logfile
+2022-06-23 17:50:17.4416 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Warn] => logfile
+2022-06-23 17:50:17.4416 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Error] => logfile
+2022-06-23 17:50:17.4416 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Fatal] => logfile
+2022-06-23 17:50:17.4534 Debug FileTarget(Name=logfile): Preparing for new file 'C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API\bin\Debug\net6.0\.\logs\{shortdate}_logfile.txt'
+2022-06-23 17:50:17.4534 Debug FileTarget(Name=logfile): Creating file appender: C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API\bin\Debug\net6.0\.\logs\{shortdate}_logfile.txt
+2022-06-23 17:50:17.4534 Trace FileTarget(Name=logfile): Opening C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API\bin\Debug\net6.0\.\logs\{shortdate}_logfile.txt with allowFileSharedWriting=False
+2022-06-23 17:51:17.7684 Info Configuration file change detected! Reloading in 1000ms...
+2022-06-23 17:51:18.7860 Info Reloading configuration...
+2022-06-23 17:51:18.7860 Info Loading NLog config from XML file: C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API\nlog.config
+2022-06-23 17:51:18.7860 Trace ParseNLogElement
+2022-06-23 17:51:18.7860 Trace ParseNLogConfig
+2022-06-23 17:51:18.7939 Info Message Template Auto Format enabled
+2022-06-23 17:51:18.7939 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-23 17:51:18.7939 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-06-23 17:51:18.7939 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:51:18.7939 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-23 17:51:18.7939 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-23 17:51:18.7939 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:51:18.7939 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-23 17:51:18.7939 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:51:18.7939 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-23 17:51:18.7939 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:51:18.7939 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-23 17:51:18.7939 Info Adding target FileTarget(Name=logfile)
+2022-06-23 17:51:18.7939 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-23 17:51:18.8093 Trace ParseRulesElement
+2022-06-23 17:51:18.8093 Debug Stopping file watching for path 'C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API' filter 'nlog.config'
+2022-06-23 17:51:18.8093 Info Closing old configuration.
+2022-06-23 17:51:18.8093 Debug LogFactory Flush with timeout=15 secs
+2022-06-23 17:51:18.8093 Trace Flushing all 1 targets...
+2022-06-23 17:51:18.8093 Trace ForEachItemInParallel() 1 items
+2022-06-23 17:51:18.8093 Trace FileTarget(Name=logfile): FlushAsync
+2022-06-23 17:51:18.8263 Trace Continuation invoked: 
+2022-06-23 17:51:18.8263 Trace Parallel task completed. 0 items remaining
+2022-06-23 17:51:18.8263 Debug Flush completed
+2022-06-23 17:51:18.8263 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-06-23 17:51:18.8263 Debug Closing logging configuration...
+2022-06-23 17:51:18.8263 Trace Closing FileTarget(Name=logfile)
+2022-06-23 17:51:18.8263 Debug FileTarget(Name=logfile): Closing...
+2022-06-23 17:51:18.8263 Trace FileTarget(Name=logfile): FinalizeFile 'C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API\bin\Debug\net6.0\.\logs\{shortdate}_logfile.txt, isArchiving: False'
+2022-06-23 17:51:18.8413 Debug FileTarget(Name=logfile): FileAppender Closing Invalidate - C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API\bin\Debug\net6.0\.\logs\{shortdate}_logfile.txt
+2022-06-23 17:51:18.8413 Trace FileTarget: Closing 'C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API\bin\Debug\net6.0\.\logs\{shortdate}_logfile.txt'
+2022-06-23 17:51:18.8413 Debug FileTarget(Name=logfile): Closed.
+2022-06-23 17:51:18.8413 Trace Closing .\logs\{shortdate}_logfile.txt
+2022-06-23 17:51:18.8413 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:51:18.8413 Trace Closing {longdate} {level:uppercase=true} {message}
+2022-06-23 17:51:18.8413 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:51:18.8413 Debug Finished closing logging configuration.
+2022-06-23 17:51:18.8413 Debug Watching file-filter 'nlog.config' in directory: C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API
+2022-06-23 17:51:18.8413 Debug --- NLog configuration dump ---
+2022-06-23 17:51:18.8413 Debug Targets:
+2022-06-23 17:51:18.8413 Debug FileTarget(Name=logfile)
+2022-06-23 17:51:18.8563 Debug Rules:
+2022-06-23 17:51:18.8563 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-23 17:51:18.8563 Debug --- End of NLog configuration dump ---
+2022-06-23 17:51:18.8563 Trace FindReachableObject<System.Object>:
+2022-06-23 17:51:18.8563 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-23 17:51:18.8563 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-23 17:51:18.8563 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-23 17:51:18.8563 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-23 17:51:18.8563 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-06-23 17:51:18.8563 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:51:18.8563 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:51:18.8563 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-23 17:51:18.8563 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:51:18.8563 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-23 17:51:18.8563 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-23 17:51:18.8563 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:51:18.8563 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-23 17:51:18.8563 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:51:18.8563 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-23 17:51:18.8563 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:51:18.8563 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-23 17:51:18.8563 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-23 17:51:18.8563 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-23 17:51:18.8563 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-23 17:51:18.8563 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API\nlog.config
+2022-06-23 17:51:18.8563 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-23 17:51:18.8563 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-23 17:51:18.8563 Trace Initializing Layout Renderer: ${message}
+2022-06-23 17:51:18.8563 Trace Initializing Layout Renderer: ${literal}
+2022-06-23 17:51:18.8563 Trace Initializing Layout Renderer: ${level}
+2022-06-23 17:51:18.8563 Trace Initializing Layout Renderer: ${literal}
+2022-06-23 17:51:18.8563 Trace Initializing Layout Renderer: ${longdate}
+2022-06-23 17:51:18.8563 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-23 17:51:18.8563 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:51:18.8563 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-23 17:51:18.8716 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:51:18.8716 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-23 17:51:18.8716 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:51:18.8716 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-23 17:51:18.8716 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:51:18.8716 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-23 17:51:18.8716 Trace Initializing Layout Renderer: ${literal}
+2022-06-23 17:51:18.8716 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-23 17:51:18.8716 Trace Initializing Layout Renderer: ${literal}
+2022-06-23 17:51:18.8716 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-06-23 17:51:18.8716 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-23 17:51:18.8716 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-06-23 17:51:18.8716 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-23 17:51:18.8716 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:51:18.8716 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-23 17:51:18.8716 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-23 17:51:18.8716 Trace Initializing FileTarget(Name=logfile)
+2022-06-23 17:51:18.8716 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-23 17:51:18.8716 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-23 17:51:18.8716 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-23 17:51:18.8716 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-06-23 17:51:18.8716 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-23 17:51:18.8716 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-23 17:51:18.8716 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-23 17:51:18.8716 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-23 17:51:18.8716 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-23 17:51:18.8716 Debug Targets configured when LogLevel >= Debug for Logger: JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager
+2022-06-23 17:51:18.8716 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Debug] => logfile
+2022-06-23 17:51:18.8716 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Info] => logfile
+2022-06-23 17:51:18.8716 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Warn] => logfile
+2022-06-23 17:51:18.8716 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Error] => logfile
+2022-06-23 17:51:18.8716 Debug Logger JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager [Fatal] => logfile
+2022-06-23 17:51:50.9487 Info AppDomain Shutting down. LogFactory closing...
+2022-06-23 17:51:50.9508 Debug Stopping file watching for path 'C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Presentation\JointCarPlaylists.API' filter 'nlog.config'
+2022-06-23 17:51:50.9508 Trace Flushing all 1 targets...
+2022-06-23 17:51:50.9508 Trace ForEachItemInParallel() 1 items
+2022-06-23 17:51:50.9508 Trace FileTarget(Name=logfile): FlushAsync
+2022-06-23 17:51:50.9508 Trace Continuation invoked: 
+2022-06-23 17:51:50.9508 Trace Parallel task completed. 0 items remaining
+2022-06-23 17:51:50.9508 Debug Flush completed
+2022-06-23 17:51:50.9508 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-06-23 17:51:50.9508 Debug Targets not configured for Logger: JointCarPlaylists.Infrastructure.Services.Logger.LoggerManager
+2022-06-23 17:51:50.9508 Debug Closing logging configuration...
+2022-06-23 17:51:50.9508 Trace Closing FileTarget(Name=logfile)
+2022-06-23 17:51:50.9508 Debug FileTarget(Name=logfile): Closing...
+2022-06-23 17:51:50.9508 Debug FileTarget(Name=logfile): Closed.
+2022-06-23 17:51:50.9508 Trace Closing .\logs\${shortdate}_logfile.txt
+2022-06-23 17:51:50.9508 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:51:50.9508 Trace Closing Layout Renderer: ${shortdate}
+2022-06-23 17:51:50.9508 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:51:50.9508 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-06-23 17:51:50.9508 Trace Closing Layout Renderer: ${longdate}
+2022-06-23 17:51:50.9508 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:51:50.9508 Trace Closing Layout Renderer: ${level}
+2022-06-23 17:51:50.9508 Trace Closing Layout Renderer: ${literal}
+2022-06-23 17:51:50.9508 Trace Closing Layout Renderer: ${message}
+2022-06-23 17:51:50.9508 Debug Finished closing logging configuration.
+2022-06-23 17:51:50.9508 Info LogFactory has been closed.
