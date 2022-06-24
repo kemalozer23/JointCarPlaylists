@@ -1,6 +1,13 @@
 ﻿using JointCarPlaylists.Application.Abstractions.Logger;
+using JointCarPlaylists.Application.Abstractions.ServicesAbstract;
+using JointCarPlaylists.Application.Repositories;
 using JointCarPlaylists.Infrastructure.Services.Logger;
+using JointCarPlaylists.Infrastructure.Services.ServicesConcrete;
+using JointCarPlaylists.Persistence.Contexts;
+using JointCarPlaylists.Persistence.Repositories;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -29,6 +36,16 @@ namespace JointCarPlaylists.Infrastructure.Extensions
 
         public static void ConfigureLoggerService(this IServiceCollection services) =>
             services.AddSingleton<ILoggerManager, LoggerManager>();
+
+        public static void ConfigureRepositoryManager(this IServiceCollection services) =>
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
+
+        public static void ConfigureServiceManager(this IServiceCollection services) =>
+            services.AddScoped<IServiceManager, ServiceManager>();
+
+        public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration configuration) =>
+            services.AddDbContext<JointCarPlaylistsDbContext>(opts =>
+                    opts.UseSqlServer(configuration.GetConnectionString("sqlConnection")));
 
     }
 }
