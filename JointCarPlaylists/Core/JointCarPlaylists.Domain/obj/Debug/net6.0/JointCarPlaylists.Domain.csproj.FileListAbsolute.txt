@@ -1,0 +1,12 @@
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Domain\bin\Debug\net6.0\JointCarPlaylists.Domain.deps.json
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Domain\bin\Debug\net6.0\JointCarPlaylists.Domain.dll
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Domain\bin\Debug\net6.0\JointCarPlaylists.Domain.pdb
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Domain\obj\Debug\net6.0\JointCarPlaylists.Domain.csproj.AssemblyReference.cache
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Domain\obj\Debug\net6.0\JointCarPlaylists.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Domain\obj\Debug\net6.0\JointCarPlaylists.Domain.AssemblyInfoInputs.cache
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Domain\obj\Debug\net6.0\JointCarPlaylists.Domain.AssemblyInfo.cs
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Domain\obj\Debug\net6.0\JointCarPlaylists.Domain.csproj.CoreCompileInputs.cache
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Domain\obj\Debug\net6.0\JointCarPlaylists.Domain.dll
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Domain\obj\Debug\net6.0\refint\JointCarPlaylists.Domain.dll
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Domain\obj\Debug\net6.0\JointCarPlaylists.Domain.pdb
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Domain\obj\Debug\net6.0\ref\JointCarPlaylists.Domain.dll
