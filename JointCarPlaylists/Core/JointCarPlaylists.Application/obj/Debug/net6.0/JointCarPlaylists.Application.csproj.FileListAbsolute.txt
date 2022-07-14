@@ -10,3 +10,6 @@ C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\Joi
 C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Application\obj\Debug\net6.0\refint\JointCarPlaylists.Application.dll
 C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Application\obj\Debug\net6.0\JointCarPlaylists.Application.pdb
 C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Application\obj\Debug\net6.0\ref\JointCarPlaylists.Application.dll
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Application\bin\Debug\net6.0\JointCarPlaylists.Domain.dll
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Application\bin\Debug\net6.0\JointCarPlaylists.Domain.pdb
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Core\JointCarPlaylists.Application\obj\Debug\net6.0\JointCarPlaylists.Application.csproj.CopyComplete

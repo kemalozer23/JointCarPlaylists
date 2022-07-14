@@ -15,6 +15,6 @@ namespace JointCarPlaylists.Domain.Entities
 
         public ICollection<Track>? Tracks { get; set; }
 
-        public Album? Album { get; set; }
+        public ICollection<Album>? Albums { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace JointCarPlaylists.Domain.Entities
         public string? ReleaseDate { get; set; }
         public int TotalTracks { get; set; }
 
-        public ICollection<Artist>? Artists { get; set; }
+        public Artist? Artist { get; set; }
         public ICollection<Track>? Tracks { get; set; }
     }
 }

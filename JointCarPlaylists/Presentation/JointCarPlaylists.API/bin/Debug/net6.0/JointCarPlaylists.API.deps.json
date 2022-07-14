@@ -652,6 +652,9 @@
         }
       },
       "JointCarPlaylists.Application/1.0.0": {
+        "dependencies": {
+          "JointCarPlaylists.Domain": "1.0.0"
+        },
         "runtime": {
           "JointCarPlaylists.Application.dll": {}
         }
@@ -664,6 +667,7 @@
       "JointCarPlaylists.Infrastructure/1.0.0": {
         "dependencies": {
           "JointCarPlaylists.Application": "1.0.0",
+          "JointCarPlaylists.Persistence": "1.0.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.6",
           "Microsoft.AspNetCore.Server.IISIntegration": "2.2.1",
           "NLog.Extensions.Logging": "5.0.0"

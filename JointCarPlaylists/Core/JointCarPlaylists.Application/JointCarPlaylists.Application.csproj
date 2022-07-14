@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JointCarPlaylists.Domain\JointCarPlaylists.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

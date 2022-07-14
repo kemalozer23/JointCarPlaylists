@@ -13,3 +13,7 @@ C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastr
 C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\refint\JointCarPlaylists.Infrastructure.dll
 C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\JointCarPlaylists.Infrastructure.pdb
 C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\obj\Debug\net6.0\ref\JointCarPlaylists.Infrastructure.dll
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\bin\Debug\net6.0\JointCarPlaylists.Domain.dll
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\bin\Debug\net6.0\JointCarPlaylists.Persistence.dll
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\bin\Debug\net6.0\JointCarPlaylists.Persistence.pdb
+C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\bin\Debug\net6.0\JointCarPlaylists.Domain.pdb

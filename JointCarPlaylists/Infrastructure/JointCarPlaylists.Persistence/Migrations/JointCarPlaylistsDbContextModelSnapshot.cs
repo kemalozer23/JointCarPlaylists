@@ -29,6 +29,9 @@ namespace JointCarPlaylists.Persistence.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("AlbumId");
 
+                    b.Property<Guid?>("ArtistId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -40,6 +43,8 @@ namespace JointCarPlaylists.Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ArtistId");
+
                     b.ToTable("Albums");
                 });
 
@@ -50,15 +55,10 @@ namespace JointCarPlaylists.Persistence.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("ArtistId");
 
-                    b.Property<Guid?>("AlbumId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AlbumId");
 
                     b.ToTable("Artists");
                 });
@@ -91,18 +91,18 @@ namespace JointCarPlaylists.Persistence.Migrations
                     b.ToTable("Tracks");
                 });
 
-            modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Artist", b =>
+            modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Album", b =>
                 {
-                    b.HasOne("JointCarPlaylists.Domain.Entities.Album", "Album")
-                        .WithMany("Artists")
-                        .HasForeignKey("AlbumId");
+                    b.HasOne("JointCarPlaylists.Domain.Entities.Artist", "Artist")
+                        .WithMany("Albums")
+                        .HasForeignKey("ArtistId");
 
-                    b.Navigation("Album");
+                    b.Navigation("Artist");
                 });
 
             modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Track", b =>
                 {
-                    b.HasOne("JointCarPlaylists.Domain.Entities.Album", null)
+                    b.HasOne("JointCarPlaylists.Domain.Entities.Album", "Album")
                         .WithMany("Tracks")
                         .HasForeignKey("AlbumId");
 
@@ -110,18 +110,20 @@ namespace JointCarPlaylists.Persistence.Migrations
                         .WithMany("Tracks")
                         .HasForeignKey("ArtistId");
 
+                    b.Navigation("Album");
+
                     b.Navigation("Artist");
                 });
 
             modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Album", b =>
                 {
-                    b.Navigation("Artists");
-
                     b.Navigation("Tracks");
                 });
 
             modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Artist", b =>
                 {
+                    b.Navigation("Albums");
+
                     b.Navigation("Tracks");
                 });
 #pragma warning restore 612, 618

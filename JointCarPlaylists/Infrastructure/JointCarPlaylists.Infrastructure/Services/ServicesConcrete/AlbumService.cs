@@ -1,6 +1,7 @@
 ﻿using JointCarPlaylists.Application.Abstractions.Logger;
 using JointCarPlaylists.Application.Abstractions.ServicesAbstract;
 using JointCarPlaylists.Application.Repositories;
+using JointCarPlaylists.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,21 @@ namespace JointCarPlaylists.Infrastructure.Services.ServicesConcrete
         {
             _repository = repository;
             _logger = logger;
+        }
+
+        public IEnumerable<Album> GetAllAlbums(bool trackChanges)
+        {
+            try
+            {
+                var albums = _repository.Album.GetAllAlbums(trackChanges);
+
+                return albums;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong in the { nameof(GetAllAlbums)} service method { ex}");
+                throw;
+            }
         }
     }
 }

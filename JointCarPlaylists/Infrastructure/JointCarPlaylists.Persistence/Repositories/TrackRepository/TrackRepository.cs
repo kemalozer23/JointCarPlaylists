@@ -1,4 +1,4 @@
-﻿using JointCarPlaylists.Application.Repositories.Track;
+﻿using JointCarPlaylists.Application.Repositories.TrackRepository;
 using JointCarPlaylists.Domain.Entities;
 using JointCarPlaylists.Persistence.Contexts;
 using System;
@@ -13,7 +13,8 @@ namespace JointCarPlaylists.Persistence.Repositories
     {
         public TrackRepository(JointCarPlaylistsDbContext context) : base(context)
         {
-
         }
+
+        public IEnumerable<Track> GetAllTracks(bool trackChanges) => FindAll(trackChanges).OrderBy(c => c.Name).ToList();
     }
 }

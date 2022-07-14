@@ -1,7 +1,6 @@
-﻿
-using JointCarPlaylists.Application.Repositories.Album;
-using JointCarPlaylists.Application.Repositories.Artist;
-using JointCarPlaylists.Application.Repositories.Track;
+﻿using JointCarPlaylists.Application.Repositories.AlbumRepository;
+using JointCarPlaylists.Application.Repositories.ArtistRepository;
+using JointCarPlaylists.Application.Repositories.TrackRepository;
 using System;
 using System.Collections.Generic;
 using System.Linq;

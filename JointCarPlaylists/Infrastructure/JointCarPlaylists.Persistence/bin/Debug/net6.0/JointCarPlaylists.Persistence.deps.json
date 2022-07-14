@@ -574,6 +574,9 @@
         }
       },
       "JointCarPlaylists.Application/1.0.0": {
+        "dependencies": {
+          "JointCarPlaylists.Domain": "1.0.0"
+        },
         "runtime": {
           "JointCarPlaylists.Application.dll": {}
         }
