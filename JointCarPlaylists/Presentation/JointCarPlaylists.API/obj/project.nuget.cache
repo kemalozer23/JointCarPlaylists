@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wFYdaASsQw1ZCaZVo1WgN/TKoA6ZdehUuI1HSo2/Zg/p+FXtP+aK0uz93/UEId4adRkxpJu+Ej3QXTuxAsVM1Q==",
+  "dgSpecHash": "19dFZ2IU1NwynSTMqU9gMvJCiPuDQRBSX75V9Q7Apf2PxJf+LcV81Lf74kXTFNGZogQybEvPuRhZqE95WzoavQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\KemalÖzer\\Desktop\\Practice\\my-apps\\my-app-1\\JointCarPlaylists\\Presentation\\JointCarPlaylists.API\\JointCarPlaylists.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\KemalÖzer\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\KemalÖzer\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\KemalÖzer\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\KemalÖzer\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\KemalÖzer\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

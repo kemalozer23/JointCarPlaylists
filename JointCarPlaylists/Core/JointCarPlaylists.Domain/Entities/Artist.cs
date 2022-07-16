@@ -12,6 +12,11 @@ namespace JointCarPlaylists.Domain.Entities
         [Column("ArtistId")]
         public Guid Id { get; set; }
         public string? Name { get; set; }
+        public string? ExternalUrl { get; set; }
+        public int? Followers { get; set; }
+        public int? Popularity { get; set; }
+        public string? Type { get; set; }
+        public string? URI { get; set; }
 
         public ICollection<Track>? Tracks { get; set; }
 
