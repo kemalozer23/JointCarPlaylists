@@ -26,4 +26,8 @@
     <ProjectReference Include="..\..\Infrastructure\JointCarPlaylists.Persistence\JointCarPlaylists.Persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="internal_logs\" />
+  </ItemGroup>
+
 </Project>

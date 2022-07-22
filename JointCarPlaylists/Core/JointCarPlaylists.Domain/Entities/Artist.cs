@@ -18,6 +18,6 @@ namespace JointCarPlaylists.Domain.Entities
         public string? Type { get; set; }
         public string? URI { get; set; }
 
-        public List<Album>? Albums { get; set; }
+        public ICollection<Album>? Albums { get; set; }
     }
 }

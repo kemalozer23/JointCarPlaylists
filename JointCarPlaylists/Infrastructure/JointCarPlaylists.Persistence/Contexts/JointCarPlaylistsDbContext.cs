@@ -19,12 +19,6 @@ namespace JointCarPlaylists.Persistence.Contexts
             modelBuilder.ApplyConfiguration(new AlbumConfiguration());
             modelBuilder.ApplyConfiguration(new ArtistConfiguration());
             modelBuilder.ApplyConfiguration(new TrackConfiguration());
-
-            modelBuilder.Entity<Album>()
-                        .HasOne(p => p.Artist)
-                        .WithMany(b => b.Albums)
-                        .HasForeignKey(p => p.ArtistForeignKey);
-
         }
 
         public DbSet<Album>? Albums { get; set; }

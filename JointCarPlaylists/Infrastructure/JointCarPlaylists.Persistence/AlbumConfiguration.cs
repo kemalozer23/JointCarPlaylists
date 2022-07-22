@@ -24,7 +24,7 @@ namespace JointCarPlaylists.Persistence
                 AlbumType = "Hip-Hop",
                 ExternalUrl = "asdsadasd.com",
                 Type = "Underground",
-                ArtistForeignKey = new Guid("80abbca8-664d-4b20-b5de-024705497d4a")
+                ArtistId = new Guid("80abbca8-664d-4b20-b5de-024705497d4a")
             },
             new Album
             {
@@ -35,7 +35,7 @@ namespace JointCarPlaylists.Persistence
                 AlbumType = "Hip-Hop",
                 ExternalUrl = "asds444adasd.com",
                 Type = "Underground",
-                ArtistForeignKey = new Guid("80abbca8-664d-4b20-b5de-024705497d4a")
+                ArtistId = new Guid("80abbca8-664d-4b20-b5de-024705497d4a")
             }
             );
         }

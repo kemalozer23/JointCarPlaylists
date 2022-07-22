@@ -4,6 +4,7 @@ using JointCarPlaylists.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JointCarPlaylists.Persistence.Migrations
 {
     [DbContext(typeof(JointCarPlaylistsDbContext))]
-    partial class JointCarPlaylistsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220722155939_testtttssoooo")]
+    partial class testtttssoooo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
