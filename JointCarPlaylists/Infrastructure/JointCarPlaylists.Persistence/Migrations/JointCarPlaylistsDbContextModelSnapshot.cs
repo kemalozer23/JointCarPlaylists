@@ -32,7 +32,7 @@ namespace JointCarPlaylists.Persistence.Migrations
                     b.Property<string>("AlbumType")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("ArtistId")
+                    b.Property<Guid>("ArtistForeignKey")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ExternalUrl")
@@ -52,9 +52,33 @@ namespace JointCarPlaylists.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ArtistId");
+                    b.HasIndex("ArtistForeignKey");
 
                     b.ToTable("Albums");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
+                            AlbumType = "Hip-Hop",
+                            ArtistForeignKey = new Guid("80abbca8-664d-4b20-b5de-024705497d4a"),
+                            ExternalUrl = "asdsadasd.com",
+                            Name = "IT_Solutions Ltd",
+                            ReleaseDate = "1999",
+                            TotalTracks = 0,
+                            Type = "Underground"
+                        },
+                        new
+                        {
+                            Id = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
+                            AlbumType = "Hip-Hop",
+                            ArtistForeignKey = new Guid("80abbca8-664d-4b20-b5de-024705497d4a"),
+                            ExternalUrl = "asds444adasd.com",
+                            Name = "Admin_Solutions Ltd",
+                            ReleaseDate = "2005",
+                            TotalTracks = 4,
+                            Type = "Underground"
+                        });
                 });
 
             modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Artist", b =>
@@ -85,6 +109,18 @@ namespace JointCarPlaylists.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Artists");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("80abbca8-664d-4b20-b5de-024705497d4a"),
+                            ExternalUrl = "ted.com",
+                            Followers = 1232312,
+                            Name = "Kendrick",
+                            Popularity = 9,
+                            Type = "Hip-Hop",
+                            URI = "dsasdasdasd.com"
+                        });
                 });
 
             modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Track", b =>
@@ -93,12 +129,6 @@ namespace JointCarPlaylists.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("TrackId");
-
-                    b.Property<Guid?>("AlbumId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("ArtistId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int?>("DurationMS")
                         .HasColumnType("int");
@@ -126,47 +156,61 @@ namespace JointCarPlaylists.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AlbumId");
-
-                    b.HasIndex("ArtistId");
-
                     b.ToTable("Tracks");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("80abbca8-664d-4b20-b5de-024705497d4a"),
+                            DurationMS = 5000,
+                            Explicit = true,
+                            ExternalURL = "sedasdas.com",
+                            Name = "Sam Raiden",
+                            Popularity = 34,
+                            TrackNumber = 2,
+                            Type = "Underground",
+                            URI = "losakdfdf.com"
+                        },
+                        new
+                        {
+                            Id = new Guid("86dba8c0-d178-41e7-938c-ed49778fb52a"),
+                            DurationMS = 4000,
+                            Explicit = true,
+                            ExternalURL = "sewresdas.com",
+                            Name = "Jana McLeaf",
+                            Popularity = 64,
+                            TrackNumber = 3,
+                            Type = "Underground",
+                            URI = "lossdsdfdfdf.com"
+                        },
+                        new
+                        {
+                            Id = new Guid("021ca3c1-0deb-4afd-ae94-2159a8479811"),
+                            DurationMS = 500,
+                            Explicit = false,
+                            ExternalURL = "sedasds.com",
+                            Name = "Kane Miller",
+                            Popularity = 74,
+                            TrackNumber = 4,
+                            Type = "Underground",
+                            URI = "losdfdf.com"
+                        });
                 });
 
             modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Album", b =>
                 {
                     b.HasOne("JointCarPlaylists.Domain.Entities.Artist", "Artist")
                         .WithMany("Albums")
-                        .HasForeignKey("ArtistId");
+                        .HasForeignKey("ArtistForeignKey")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Artist");
-                });
-
-            modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Track", b =>
-                {
-                    b.HasOne("JointCarPlaylists.Domain.Entities.Album", "Album")
-                        .WithMany("Tracks")
-                        .HasForeignKey("AlbumId");
-
-                    b.HasOne("JointCarPlaylists.Domain.Entities.Artist", "Artist")
-                        .WithMany("Tracks")
-                        .HasForeignKey("ArtistId");
-
-                    b.Navigation("Album");
-
-                    b.Navigation("Artist");
-                });
-
-            modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Album", b =>
-                {
-                    b.Navigation("Tracks");
                 });
 
             modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Artist", b =>
                 {
                     b.Navigation("Albums");
-
-                    b.Navigation("Tracks");
                 });
 #pragma warning restore 612, 618
         }

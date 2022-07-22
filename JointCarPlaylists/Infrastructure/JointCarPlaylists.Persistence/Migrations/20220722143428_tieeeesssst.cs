@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace JointCarPlaylists.Persistence.Migrations
 {
-    public partial class DatabaseCreation : Migration
+    public partial class tieeeesssst : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,7 +16,10 @@ namespace JointCarPlaylists.Persistence.Migrations
                     AlbumId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ReleaseDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TotalTracks = table.Column<int>(type: "int", nullable: false)
+                    TotalTracks = table.Column<int>(type: "int", nullable: false),
+                    AlbumType = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ExternalUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Type = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -29,16 +32,15 @@ namespace JointCarPlaylists.Persistence.Migrations
                 {
                     ArtistId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    AlbumId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    ExternalUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Followers = table.Column<int>(type: "int", nullable: true),
+                    Popularity = table.Column<int>(type: "int", nullable: true),
+                    Type = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    URI = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Artists", x => x.ArtistId);
-                    table.ForeignKey(
-                        name: "FK_Artists_Albums_AlbumId",
-                        column: x => x.AlbumId,
-                        principalTable: "Albums",
-                        principalColumn: "AlbumId");
                 });
 
             migrationBuilder.CreateTable(
@@ -48,50 +50,29 @@ namespace JointCarPlaylists.Persistence.Migrations
                     TrackId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     TrackNumber = table.Column<int>(type: "int", nullable: true),
-                    ArtistId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    AlbumId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    DurationMS = table.Column<int>(type: "int", nullable: true),
+                    Explicit = table.Column<bool>(type: "bit", nullable: true),
+                    ExternalURL = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Popularity = table.Column<int>(type: "int", nullable: true),
+                    Type = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    URI = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Tracks", x => x.TrackId);
-                    table.ForeignKey(
-                        name: "FK_Tracks_Albums_AlbumId",
-                        column: x => x.AlbumId,
-                        principalTable: "Albums",
-                        principalColumn: "AlbumId");
-                    table.ForeignKey(
-                        name: "FK_Tracks_Artists_ArtistId",
-                        column: x => x.ArtistId,
-                        principalTable: "Artists",
-                        principalColumn: "ArtistId");
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Artists_AlbumId",
-                table: "Artists",
-                column: "AlbumId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Tracks_AlbumId",
-                table: "Tracks",
-                column: "AlbumId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Tracks_ArtistId",
-                table: "Tracks",
-                column: "ArtistId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Tracks");
+                name: "Albums");
 
             migrationBuilder.DropTable(
                 name: "Artists");
 
             migrationBuilder.DropTable(
-                name: "Albums");
+                name: "Tracks");
         }
     }
 }

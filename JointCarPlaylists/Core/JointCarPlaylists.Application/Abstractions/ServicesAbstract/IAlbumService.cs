@@ -1,5 +1,4 @@
-﻿using JointCarPlaylists.Application.DTOs;
-using JointCarPlaylists.Domain.Entities;
+﻿using JointCarPlaylists.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +9,6 @@ namespace JointCarPlaylists.Application.Abstractions.ServicesAbstract
 {
     public interface IAlbumService
     {
-        IEnumerable<AlbumDto> GetAllAlbums(bool trackChanges);
+        IEnumerable<Album> GetAllAlbums(bool trackChanges);
     }
 }

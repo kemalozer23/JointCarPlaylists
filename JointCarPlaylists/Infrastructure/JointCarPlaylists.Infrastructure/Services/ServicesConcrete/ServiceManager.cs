@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using JointCarPlaylists.Application.Abstractions.Logger;
+﻿using JointCarPlaylists.Application.Abstractions.Logger;
 using JointCarPlaylists.Application.Abstractions.ServicesAbstract;
 using JointCarPlaylists.Application.Repositories;
 using System;
@@ -16,11 +15,11 @@ namespace JointCarPlaylists.Infrastructure.Services.ServicesConcrete
         private readonly Lazy<IArtistService> _artistService;
         private readonly Lazy<ITrackService> _trackService;
 
-        public ServiceManager(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
+        public ServiceManager(IRepositoryManager repository, ILoggerManager logger)
         {
-            _albumService = new Lazy<IAlbumService>(() => new AlbumService(repository, logger, mapper));
-            _artistService = new Lazy<IArtistService>(() => new ArtistService(repository, logger, mapper));
-            _trackService = new Lazy<ITrackService>(() => new TrackService(repository, logger, mapper));
+            _albumService = new Lazy<IAlbumService>(() => new AlbumService(repository, logger));
+            _artistService = new Lazy<IArtistService>(() => new ArtistService(repository, logger));
+            _trackService = new Lazy<ITrackService>(() => new TrackService(repository, logger));
         }
 
         public IAlbumService AlbumService => _albumService.Value;

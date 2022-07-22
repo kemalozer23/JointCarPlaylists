@@ -1,7 +1,5 @@
-﻿using AutoMapper;
-using JointCarPlaylists.Application.Abstractions.Logger;
+﻿using JointCarPlaylists.Application.Abstractions.Logger;
 using JointCarPlaylists.Application.Abstractions.ServicesAbstract;
-using JointCarPlaylists.Application.DTOs;
 using JointCarPlaylists.Application.Repositories;
 using JointCarPlaylists.Domain.Entities;
 using System;
@@ -16,24 +14,20 @@ namespace JointCarPlaylists.Infrastructure.Services.ServicesConcrete
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
-        private readonly IMapper _mapper;
 
-        public TrackService(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
+        public TrackService(IRepositoryManager repository, ILoggerManager logger)
         {
             _repository = repository;
             _logger = logger;
-            _mapper = mapper;
         }
 
-        public IEnumerable<TrackDto> GetAllTracks(bool trackChanges)
+        public IEnumerable<Track> GetAllTracks(bool trackChanges)
         {
             try
             {
                 var tracks = _repository.Track.GetAllTracks(trackChanges);
 
-                var tracksDto = _mapper.Map<IEnumerable<TrackDto>>(tracks);
-
-                return tracksDto;
+                return tracks;
             }
             catch (Exception ex)
             {

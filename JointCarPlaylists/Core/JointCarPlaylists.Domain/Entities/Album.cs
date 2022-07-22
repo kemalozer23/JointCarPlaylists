@@ -21,7 +21,7 @@ namespace JointCarPlaylists.Domain.Entities
 
         public string? Type { get; set; }
 
+        public Guid ArtistForeignKey { get; set; }
         public Artist? Artist { get; set; }
-        public ICollection<Track>? Tracks { get; set; }
     }
 }

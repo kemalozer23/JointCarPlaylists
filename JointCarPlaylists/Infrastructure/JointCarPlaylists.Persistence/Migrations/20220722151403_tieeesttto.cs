@@ -5,27 +5,30 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace JointCarPlaylists.Persistence.Migrations
 {
-    public partial class upt : Migration
+    public partial class tieeesttto : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_Artists_Albums_AlbumId",
-                table: "Artists");
-
-            migrationBuilder.DropIndex(
-                name: "IX_Artists_AlbumId",
-                table: "Artists");
-
-            migrationBuilder.DropColumn(
-                name: "AlbumId",
-                table: "Artists");
-
             migrationBuilder.AddColumn<Guid>(
                 name: "ArtistId",
                 table: "Albums",
                 type: "uniqueidentifier",
-                nullable: true);
+                nullable: false,
+                defaultValue: new Guid("00000000-0000-0000-0000-000000000000"));
+
+            migrationBuilder.UpdateData(
+                table: "Albums",
+                keyColumn: "AlbumId",
+                keyValue: new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
+                column: "ArtistId",
+                value: new Guid("80abbca8-664d-4b20-b5de-024705497d4a"));
+
+            migrationBuilder.UpdateData(
+                table: "Albums",
+                keyColumn: "AlbumId",
+                keyValue: new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
+                column: "ArtistId",
+                value: new Guid("80abbca8-664d-4b20-b5de-024705497d4a"));
 
             migrationBuilder.CreateIndex(
                 name: "IX_Albums_ArtistId",
@@ -37,7 +40,8 @@ namespace JointCarPlaylists.Persistence.Migrations
                 table: "Albums",
                 column: "ArtistId",
                 principalTable: "Artists",
-                principalColumn: "ArtistId");
+                principalColumn: "ArtistId",
+                onDelete: ReferentialAction.Cascade);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -53,24 +57,6 @@ namespace JointCarPlaylists.Persistence.Migrations
             migrationBuilder.DropColumn(
                 name: "ArtistId",
                 table: "Albums");
-
-            migrationBuilder.AddColumn<Guid>(
-                name: "AlbumId",
-                table: "Artists",
-                type: "uniqueidentifier",
-                nullable: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Artists_AlbumId",
-                table: "Artists",
-                column: "AlbumId");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_Artists_Albums_AlbumId",
-                table: "Artists",
-                column: "AlbumId",
-                principalTable: "Albums",
-                principalColumn: "AlbumId");
         }
     }
 }

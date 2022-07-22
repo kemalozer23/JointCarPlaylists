@@ -5,19 +5,19 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8262A091-F1F5-4CC1-B0FA-791706AE1A66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JointCarPlaylists.Domain", "Core\JointCarPlaylists.Domain\JointCarPlaylists.Domain.csproj", "{3C43C3F7-8783-472E-8BFC-641CDAB9CCF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JointCarPlaylists.Domain", "Core\JointCarPlaylists.Domain\JointCarPlaylists.Domain.csproj", "{3C43C3F7-8783-472E-8BFC-641CDAB9CCF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JointCarPlaylists.Application", "Core\JointCarPlaylists.Application\JointCarPlaylists.Application.csproj", "{C0B31DB6-0A42-427B-9134-E16200CDCA67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JointCarPlaylists.Application", "Core\JointCarPlaylists.Application\JointCarPlaylists.Application.csproj", "{C0B31DB6-0A42-427B-9134-E16200CDCA67}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3B1B3354-1334-4E2A-A878-30D3E2D2BF2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JointCarPlaylists.Infrastructure", "Infrastructure\JointCarPlaylists.Infrastructure\JointCarPlaylists.Infrastructure.csproj", "{598E40F7-E1DE-4F84-9E49-824385D66992}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JointCarPlaylists.Infrastructure", "Infrastructure\JointCarPlaylists.Infrastructure\JointCarPlaylists.Infrastructure.csproj", "{598E40F7-E1DE-4F84-9E49-824385D66992}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JointCarPlaylists.Persistence", "Infrastructure\JointCarPlaylists.Persistence\JointCarPlaylists.Persistence.csproj", "{CA31B6B5-1FD9-46F9-BC3D-8C390F461A19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JointCarPlaylists.Persistence", "Infrastructure\JointCarPlaylists.Persistence\JointCarPlaylists.Persistence.csproj", "{CA31B6B5-1FD9-46F9-BC3D-8C390F461A19}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{50D09CF1-7BB0-47C2-AA8C-B8266769D529}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JointCarPlaylists.API", "Presentation\JointCarPlaylists.API\JointCarPlaylists.API.csproj", "{8B895739-38D9-441C-8CE9-ECA3DB5E0196}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JointCarPlaylists.API", "Presentation\JointCarPlaylists.API\JointCarPlaylists.API.csproj", "{8B895739-38D9-441C-8CE9-ECA3DB5E0196}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

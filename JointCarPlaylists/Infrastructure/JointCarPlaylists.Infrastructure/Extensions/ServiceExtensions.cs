@@ -47,8 +47,5 @@ namespace JointCarPlaylists.Infrastructure.Extensions
             services.AddDbContext<JointCarPlaylistsDbContext>(opts =>
                     opts.UseSqlServer(configuration.GetConnectionString("sqlConnection")));
 
-        public static void ConfigureMapper(this IServiceCollection services, IConfiguration configuration) =>
-            services.AddSingleton<MappingProfile>(opts => opts.GetRequiredService<MappingProfile>());
-
     }
 }

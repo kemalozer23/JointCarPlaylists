@@ -19,9 +19,5 @@ namespace JointCarPlaylists.Domain.Entities
         public int? Popularity { get; set; }
         public string? Type { get; set; }
         public string? URI { get; set; }
-
-        public Artist? Artist { get; set; }
-
-        public Album? Album { get; set; }
     }
 }

@@ -1,0 +1,45 @@
+2022-07-20 12:27:57.2207 ERROR Something went wrong in the GetAllAlbums service method AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[JointCarPlaylists.Domain.Entities.Album, JointCarPlaylists.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[JointCarPlaylists.Application.DTOs.AlbumDto, JointCarPlaylists.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Album -> AlbumDto
+JointCarPlaylists.Domain.Entities.Album -> JointCarPlaylists.Application.DTOs.AlbumDto
+   at lambda_method10(Closure , Album , AlbumDto , ResolutionContext )
+   at lambda_method9(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method9(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at JointCarPlaylists.Infrastructure.Services.ServicesConcrete.AlbumService.GetAllAlbums(Boolean trackChanges) in C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\Services\ServicesConcrete\AlbumService.cs:line 34
+2022-07-20 12:33:46.3265 ERROR Something went wrong in the GetAllAlbums service method AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[JointCarPlaylists.Domain.Entities.Album, JointCarPlaylists.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[JointCarPlaylists.Application.DTOs.AlbumDto, JointCarPlaylists.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Album -> AlbumDto
+JointCarPlaylists.Domain.Entities.Album -> JointCarPlaylists.Application.DTOs.AlbumDto
+   at lambda_method10(Closure , Album , AlbumDto , ResolutionContext )
+   at lambda_method9(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method9(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at JointCarPlaylists.Infrastructure.Services.ServicesConcrete.AlbumService.GetAllAlbums(Boolean trackChanges) in C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\Services\ServicesConcrete\AlbumService.cs:line 34
+2022-07-20 13:34:54.4793 ERROR Something went wrong in the GetAllAlbums service method AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[JointCarPlaylists.Domain.Entities.Album, JointCarPlaylists.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[JointCarPlaylists.Application.DTOs.AlbumDto, JointCarPlaylists.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Album -> AlbumDto
+JointCarPlaylists.Domain.Entities.Album -> JointCarPlaylists.Application.DTOs.AlbumDto
+   at lambda_method10(Closure , Album , AlbumDto , ResolutionContext )
+   at lambda_method9(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method9(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at JointCarPlaylists.Infrastructure.Services.ServicesConcrete.AlbumService.GetAllAlbums(Boolean trackChanges) in C:\Users\KemalÖzer\Desktop\Practice\my-apps\my-app-1\JointCarPlaylists\Infrastructure\JointCarPlaylists.Infrastructure\Services\ServicesConcrete\AlbumService.cs:line 34

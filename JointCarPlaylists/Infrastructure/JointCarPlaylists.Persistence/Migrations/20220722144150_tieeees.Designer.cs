@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JointCarPlaylists.Persistence.Migrations
 {
     [DbContext(typeof(JointCarPlaylistsDbContext))]
-    [Migration("20220714191243_upt")]
-    partial class upt
+    [Migration("20220722144150_tieeees")]
+    partial class tieeees
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,8 +31,11 @@ namespace JointCarPlaylists.Persistence.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("AlbumId");
 
-                    b.Property<Guid?>("ArtistId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("AlbumType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ExternalUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -43,9 +46,10 @@ namespace JointCarPlaylists.Persistence.Migrations
                     b.Property<int>("TotalTracks")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasIndex("ArtistId");
+                    b.HasKey("Id");
 
                     b.ToTable("Albums");
                 });
@@ -57,7 +61,22 @@ namespace JointCarPlaylists.Persistence.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("ArtistId");
 
+                    b.Property<string>("ExternalUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Followers")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Popularity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("URI")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -72,61 +91,33 @@ namespace JointCarPlaylists.Persistence.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("TrackId");
 
-                    b.Property<Guid?>("AlbumId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int?>("DurationMS")
+                        .HasColumnType("int");
 
-                    b.Property<Guid?>("ArtistId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<bool?>("Explicit")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ExternalURL")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("Popularity")
+                        .HasColumnType("int");
+
                     b.Property<int?>("TrackNumber")
                         .HasColumnType("int");
 
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("URI")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("AlbumId");
-
-                    b.HasIndex("ArtistId");
-
                     b.ToTable("Tracks");
-                });
-
-            modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Album", b =>
-                {
-                    b.HasOne("JointCarPlaylists.Domain.Entities.Artist", "Artist")
-                        .WithMany("Albums")
-                        .HasForeignKey("ArtistId");
-
-                    b.Navigation("Artist");
-                });
-
-            modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Track", b =>
-                {
-                    b.HasOne("JointCarPlaylists.Domain.Entities.Album", "Album")
-                        .WithMany("Tracks")
-                        .HasForeignKey("AlbumId");
-
-                    b.HasOne("JointCarPlaylists.Domain.Entities.Artist", "Artist")
-                        .WithMany("Tracks")
-                        .HasForeignKey("ArtistId");
-
-                    b.Navigation("Album");
-
-                    b.Navigation("Artist");
-                });
-
-            modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Album", b =>
-                {
-                    b.Navigation("Tracks");
-                });
-
-            modelBuilder.Entity("JointCarPlaylists.Domain.Entities.Artist", b =>
-                {
-                    b.Navigation("Albums");
-
-                    b.Navigation("Tracks");
                 });
 #pragma warning restore 612, 618
         }
